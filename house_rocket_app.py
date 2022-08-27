@@ -30,27 +30,27 @@ def overview_data(data):
 
     st.title('Data Overview')
 
-    if ( f_zipcode != []) & (f_attributes != []):
-        data = data.loc[data['zipcode'].isin(f_zipcode), f_attributes]
-
-    elif ( f_zipcode != []) & ( f_attributes == []):
-        data = data.loc[data['zipcode'].isin(f_zipcode), :]
-
-    elif ( f_zipcode == []) & (f_attributes != []):
-        data = data.loc[:, f_attributes]
+    if f_zipcode != []:
+        data_selection = data.loc[data['zipcode'].isin(f_zipcode)]
 
     else:
-        data = data.copy()
+        data_selection = data.copy()
 
-    st.dataframe(data.head())
+    if f_attributes != []:
+        data_print = data_selection.loc[:, f_attributes]
+    
+    else:
+        data_print = data_selection.copy()
+
+    st.dataframe(data_print.head())
 
     c1, c2 = st.columns((1, 1))  
 
     # Average metrics
-    df1 = data[['id', 'zipcode']].groupby( 'zipcode' ).count().reset_index()
-    df2 = data[['price', 'zipcode']].groupby( 'zipcode').mean().reset_index()
-    df3 = data[['sqft_living', 'zipcode']].groupby( 'zipcode').mean().reset_index()
-    df4 = data[['price_m2', 'zipcode']].groupby( 'zipcode').mean().reset_index()
+    df1 = data_selection[['id', 'zipcode']].groupby('zipcode').count().reset_index()
+    df2 = data_selection[['price', 'zipcode']].groupby('zipcode').mean().reset_index()
+    df3 = data_selection[['sqft_living', 'zipcode']].groupby('zipcode').mean().reset_index()
+    df4 = data_selection[['price_m2', 'zipcode']].groupby('zipcode').mean().reset_index()
 
 
     # merge
@@ -58,14 +58,13 @@ def overview_data(data):
     m2 = pd.merge(m1, df3, on='zipcode', how='inner')
     df = pd.merge(m2, df4, on='zipcode', how='inner')
 
-    df.columns = ['ZIPCODE', 'TOTAL HOUSES', 'PRICE', 'SQRT LIVING',
-                'PRICe/M2']
+    df.columns = ['ZIPCODE', 'TOTAL HOUSES', 'PRICE', 'SQRT LIVING','PRICE/M2']
 
     c1.header('Average Values')
-    c1.dataframe(df, height=600)
+    c1.dataframe(df, height=800)
 
     # Statistic Descriptive
-    num_attributes = data.select_dtypes( include=['int64', 'float64'])
+    num_attributes = data_selection.select_dtypes( include=['int64', 'float64'])
     media = pd.DataFrame(num_attributes.apply(np.mean))
     mediana = pd.DataFrame(num_attributes.apply(np.median))
 
@@ -78,7 +77,7 @@ def overview_data(data):
     df1.columns = ['attributes', 'max', 'min', 'mean', 'median', 'std'] 
 
     c2.header('Descriptive Analysis')
-    c2.dataframe( df1, height=800 )
+    c2.dataframe(df1, height=800)
 
     return None
 
@@ -89,7 +88,7 @@ def portfolio_density(data, geofile):
     c1.header('Portfolio Density')
 
 
-    df = data.sample(10)
+    df = data.copy().sample(100)
 
     # Base Map - Folium 
     density_map = folium.Map(location=[data['lat'].mean(), 
@@ -117,8 +116,6 @@ def portfolio_density(data, geofile):
 
     df = data[['price', 'zipcode']].groupby('zipcode').mean().reset_index()
     df.columns = ['ZIP', 'PRICE']
-
-    #df = df.sample( 10 )
 
     geofile = geofile[geofile['ZIP'].isin( df['ZIP'].tolist())]
 
