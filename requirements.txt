@@ -1,4 +1,3 @@
-numpy==1.23.1
 altair==4.1.0
 argon2-cffi==21.3.0
 argon2-cffi-bindings==21.2.0
@@ -31,7 +30,6 @@ Fiona==1.8.21
 folium==0.12.1.post1
 fonttools==4.37.1
 future==0.18.2
-GDAL==3.4.3
 geopandas==0.11.1
 gitdb==4.0.7
 GitPython==3.1.18
@@ -67,6 +65,7 @@ nest-asyncio==1.5.5
 networkx==2.8.6
 notebook==6.4.12
 numexpr==2.8.3
+numpy==1.23.1
 packaging==21.3
 pandas==1.4.3
 pandocfilters==1.5.0
