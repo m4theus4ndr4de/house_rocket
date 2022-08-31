@@ -84,23 +84,23 @@ if a house in one region is priced much higher than other houses.</li>
 
 <h2>5. The Insights</h2>
 
-<h4><b>I1:</b> Houses that have some kind of river, lake or sea in front of them are at least 30% more expensive than the others that don't have water in front of them.</h4>
-<h5><b>True:</b> Houses that have some kind of river, lake or sea in front of them are 212,64% more expensive.</h5>
+<p><b>I1:</b> Houses that have some kind of river, lake or sea in front of them are at least 30% more expensive than the others that don't have water in front of them.</p>
+<p><b>True:</b> Houses that have some kind of river, lake or sea in front of them are 212,64% more expensive.</p>
 
-<h4><b>I2:</b> Huses built before 1955 are 50% cheaper.</h4>
-<h5><b>False:</b> The price of the houses that were built before and after 1955 are almost the same.</h5>
+<p><b>I2:</b> Huses built before 1955 are 50% cheaper.</p>
+<p><b>False:</b> The price of the houses that were built before and after 1955 are almost the same.</p>
 
-<h4><b>I3:</b> The average price of the houses are greater in the summer than all other seasons by 10%.</h4>
-<h5><b>False:</b> The average price of the houses during the spring are greater than the summer.</h5>
+<p><b>I3:</b> The average price of the houses are greater in the summer than all other seasons by 10%.</p>
+<p><b>False:</b> The average price of the houses during the spring are greater than the summer.</p>
 
-<h4><b>I4:</b> The average price increased by 10% from 2014 to 2015.</h4>
-<h5><b>False:</b> The mean price of the houses is almost the same in the two years considered.</h5>
+<p><b>I4:</b> The average price increased by 10% from 2014 to 2015.</p>
+<p><b>False:</b> The mean price of the houses is almost the same in the two years considered.</p>
 
-<h4><b>I5:</b> The difference between the lowest and highest value between the average price for the months is greater than 10 % of the maximum value.</h4>
-<h5><b>False:</b> The average price from april is a little bit less than 10% greater than the average price in february.</h5>
+<p><b>I5:</b> The difference between the lowest and highest value between the average price for the months is greater than 10 % of the maximum value.</p>
+<p><b>False:</b> The average price from april is a little bit less than 10% greater than the average price in february.</p>
 
-<h4><b>I6:</b> Houses that were never renovated are at least 20% cheaper.</h4>
-<h5><b>True:</b> Houses that were never renovated are 30% cheaper than the others that were renovated.</h5>
+<p><b>I6:</b> Houses that were never renovated are at least 20% cheaper.</p>
+<p><b>True:</b> Houses that were never renovated are 30% cheaper than the others that were renovated.</p>
 
 <h2>6. Possible Profit of the Solution</h2>
 
