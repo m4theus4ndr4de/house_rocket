@@ -3,55 +3,55 @@
 <h1>House Rocket</h1>
 
 <p>This is a fictional project for studying purposes. The company, business context and the insights are not real. 
-    The dataset used in this project is from Kaggle and it is available <a href="https://www.kaggle.com/datasets/harlfoxem/housesalesprediction" target="_blank">there</a>.</p>
+The dataset used in this project is from Kaggle and it is available <a href="https://www.kaggle.com/datasets/harlfoxem/housesalesprediction" target="_blank">there</a>.</p>
 
 <h2>1. Description of the Business Problem</h2>
 
-    <p>The House Rocket is a real state company. They work buying houses for a good price and selling selling them later after some time. 
-        The company has a dataset that contains information about a lot of houses available to be bought. 
-        The data scientist from House Rocket should help the CEO answering two questions and creating two tool to help understanding the dataset</p>
+<p>The House Rocket is a real state company. They work buying houses for a good price and selling selling them later after some time. 
+The company has a dataset that contains information about a lot of houses available to be bought. 
+The data scientist from House Rocket should help the CEO answering two questions and creating two tool to help understanding the dataset</p>
 
-    <h3>The questions to be answered:</h3>
-        <p>Which houses should the House Rocket CEO buy and at what price?
-            The source code can be found <a href="https://github.com/m4theus4ndr4de/house_rocket/blob/main/house_rocket_app.py" target="_blank">here</a>
-             and the dashboard is available <a href="https://house-rocket-app-ma.herokuapp.com/" target="_blank">here</a>.
-        </p>
-        <p>When is the best time to sell them and what would be the selling price?</p>
+<h3>The questions to be answered:</h3>
+<p>Which houses should the House Rocket CEO buy and at what price?
+    The source code can be found <a href="https://github.com/m4theus4ndr4de/house_rocket/blob/main/house_rocket_app.py" target="_blank">here</a>
+        and the dashboard is available <a href="https://house-rocket-app-ma.herokuapp.com/" target="_blank">here</a>.
+</p>
+<p>When is the best time to sell them and what would be the selling price?</p>
 
-    <h3>The tools to be created:</h3>
-        <p>An interactive dashboard in which it is possible to filter the data according to the CEO requirements and explore more about it.</p>
-        <p>Crate a few insights about the dataset telling if they are true or false.</p>
+<h3>The tools to be created:</h3>
+<p>An interactive dashboard in which it is possible to filter the data according to the CEO requirements and explore more about it.</p>
+<p>Crate a few insights about the dataset telling if they are true or false.</p>
 
 <h2>2. Dataset Attributes</h2>
-    <p>Information about the atrributes can be found <a href="https://www.kaggle.com/harlfoxem/housesalesprediction/discussion/207885" target="_blank">here</a>.</p>
+<p>Information about the atrributes can be found <a href="https://www.kaggle.com/harlfoxem/housesalesprediction/discussion/207885" target="_blank">here</a>.</p>
 
 
-    <table style="width:100%">
-        <tr><th>Attribute</th><th>Description</th></tr>
-        <tr><td>id</td><td>Unique ID for each home sold</td></tr>
-        <tr><td>date</td><td>Date of the home sale</td></tr>
-        <tr><td>price</td><td>Price of each home sold</td></tr>
-        <tr><td>bedrooms</td><td>Number of bedrooms</td></tr>
-        <tr><td>bathrooms</td><td>Number of bathrooms, where .5 accounts for a room with a toilet but no shower</td></tr>
-        <tr><td>sqft_living</td><td>Square footage of the apartments interior living space</td></tr>
-        <tr><td>sqft_lot</td><td>Square footage of the land space</td></tr>
-        <tr><td>floors</td><td>Number of floors</td></tr>
-        <tr><td>waterfront</td><td>A dummy variable for whether the apartment was overlooking the waterfront or not</td></tr>
-        <tr><td>view</td><td>An index from 0 to 4 of how good the view of the property was</td></tr>
-        <tr><td>condition</td><td>An index from 1 to 5 on the condition of the apartment</td></tr>
-        <tr><td>grade</td><td>An index from 1 to 13, where 1-3 falls short of building construction and design, 
-                                                           7 has an average level of construction and design, and 
-                                                           11-13 have a high quality level of construction and design</td></tr>
-        <tr><td>sqft_above</td><td>The square footage of the interior housing space that is above ground level</td></tr>
-        <tr><td>sqft_basement</td><td>The square footage of the interior housing space that is below ground level</td></tr>
-        <tr><td>yr_built</td><td>The year the house was initially built</td></tr>
-        <tr><td>yr_renovated</td><td>The year of the house's last renovation</td></tr>
-        <tr><td>zipcode</td><td>What zipcode area the house is in</td></tr>
-        <tr><td>lat</td><td>Lattitude of the house</td></tr>
-        <tr><td>long</td><td>Longitude of the house</td></tr>
-        <tr><td>sqft_living15</td><td>The square footage of interior housing living space for the nearest 15 neighbors</td></tr>
-        <tr><td>sqft_lot15</td><td>The square footage of the land lots of the nearest 15 neighbors</td></tr>
-      </table>
+<table style="width:100%">
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td>id</td><td>Unique ID for each home sold</td></tr>
+<tr><td>date</td><td>Date of the home sale</td></tr>
+<tr><td>price</td><td>Price of each home sold</td></tr>
+<tr><td>bedrooms</td><td>Number of bedrooms</td></tr>
+<tr><td>bathrooms</td><td>Number of bathrooms, where .5 accounts for a room with a toilet but no shower</td></tr>
+<tr><td>sqft_living</td><td>Square footage of the apartments interior living space</td></tr>
+<tr><td>sqft_lot</td><td>Square footage of the land space</td></tr>
+<tr><td>floors</td><td>Number of floors</td></tr>
+<tr><td>waterfront</td><td>A dummy variable for whether the apartment was overlooking the waterfront or not</td></tr>
+<tr><td>view</td><td>An index from 0 to 4 of how good the view of the property was</td></tr>
+<tr><td>condition</td><td>An index from 1 to 5 on the condition of the apartment</td></tr>
+<tr><td>grade</td><td>An index from 1 to 13, where 1-3 falls short of building construction and design, 
+                                                    7 has an average level of construction and design, and 
+                                                    11-13 have a high quality level of construction and design</td></tr>
+<tr><td>sqft_above</td><td>The square footage of the interior housing space that is above ground level</td></tr>
+<tr><td>sqft_basement</td><td>The square footage of the interior housing space that is below ground level</td></tr>
+<tr><td>yr_built</td><td>The year the house was initially built</td></tr>
+<tr><td>yr_renovated</td><td>The year of the house's last renovation</td></tr>
+<tr><td>zipcode</td><td>What zipcode area the house is in</td></tr>
+<tr><td>lat</td><td>Lattitude of the house</td></tr>
+<tr><td>long</td><td>Longitude of the house</td></tr>
+<tr><td>sqft_living15</td><td>The square footage of interior housing living space for the nearest 15 neighbors</td></tr>
+<tr><td>sqft_lot15</td><td>The square footage of the land lots of the nearest 15 neighbors</td></tr>
+</table>
 <!--
 # 3. Premissas do Negócio
 
