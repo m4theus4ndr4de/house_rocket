@@ -70,7 +70,7 @@ if a house in one region is priced much higher than other houses.</li>
 
 <h2>4. Solution Strategy</h2>
 <ol>
-<li>Download the dataset form <a href="https://www.kaggle.com/datasets/harlfoxem/housesalesprediction" target="_blank">Kaggle</a>.</li>
+<li>Download the dataset from <a href="https://www.kaggle.com/datasets/harlfoxem/housesalesprediction" target="_blank">Kaggle</a>.</li>
 <li>Understand the business problem.</li>
 <li>Clean, analyse and explore the dataset using data science packages in Python.</li>
 <li>Answer the main questions from the business problem.</li>
