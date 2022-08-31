@@ -2,8 +2,8 @@
 
 <h1>House Rocket</h1>
 
-    <p>This is a fictional project for studying purposes. The company, business context and the insights are not real. 
-        The dataset used in this project is from Kaggle and it is available <a href="https://www.kaggle.com/datasets/harlfoxem/housesalesprediction" target="_blank">there</a>.</p>
+<p>This is a fictional project for studying purposes. The company, business context and the insights are not real. 
+    The dataset used in this project is from Kaggle and it is available <a href="https://www.kaggle.com/datasets/harlfoxem/housesalesprediction" target="_blank">there</a>.</p>
 
 <h2>1. Description of the Business Problem</h2>
 
