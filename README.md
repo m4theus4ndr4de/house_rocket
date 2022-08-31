@@ -54,7 +54,7 @@ The data scientist from House Rocket should help the CEO answering two questions
 </table>
 
 <h2>3. Business Premises</h2>
-<h3>the assumptions that were assumed for the development of the business problem solution are:</h3>
+<h3>The premises that were assumed for the development of the business problem solution are:</h3>
 
 <ul>
 <li>The zipcode, condition and grade were the most important variables to decide which houses should be purchased or not. Only houses with condition 
