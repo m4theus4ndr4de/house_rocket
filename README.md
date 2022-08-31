@@ -16,7 +16,9 @@ The data scientist from House Rocket should help the CEO answering two questions
     The source code can be found <a href="https://github.com/m4theus4ndr4de/house_rocket/blob/main/house_rocket_app.py" target="_blank">here</a>
         and the dashboard is available <a href="https://house-rocket-app-ma.herokuapp.com/" target="_blank">here</a>.
 </p>
-<p>When is the best time to sell them and what would be the selling price?</p>
+<p>When is the best time to sell them and what would be the selling price? 
+    The source code can be found <a href="https://github.com/m4theus4ndr4de/house_rocket/blob/main/house_rocket_insights.ipynb" target="_blank">here</a>
+</p>
 
 <h3>The tools to be created:</h3>
 <p>An interactive dashboard in which it is possible to filter the data according to the CEO requirements and explore more about it.</p>
@@ -24,7 +26,6 @@ The data scientist from House Rocket should help the CEO answering two questions
 
 <h2>2. Dataset Attributes</h2>
 <p>Information about the atrributes can be found <a href="https://www.kaggle.com/harlfoxem/housesalesprediction/discussion/207885" target="_blank">here</a>.</p>
-
 
 <table style="width:100%">
 <tr><th>Attribute</th><th>Description</th></tr>
@@ -40,8 +41,7 @@ The data scientist from House Rocket should help the CEO answering two questions
 <tr><td>view</td><td>An index from 0 to 4 of how good the view of the property was</td></tr>
 <tr><td>condition</td><td>An index from 1 to 5 on the condition of the apartment</td></tr>
 <tr><td>grade</td><td>An index from 1 to 13, where 1-3 falls short of building construction and design, 
-                                                    7 has an average level of construction and design, and 
-                                                    11-13 have a high quality level of construction and design</td></tr>
+7 has an average level of construction and design, and 11-13 have a high quality level of construction and design</td></tr>
 <tr><td>sqft_above</td><td>The square footage of the interior housing space that is above ground level</td></tr>
 <tr><td>sqft_basement</td><td>The square footage of the interior housing space that is below ground level</td></tr>
 <tr><td>yr_built</td><td>The year the house was initially built</td></tr>
@@ -52,43 +52,33 @@ The data scientist from House Rocket should help the CEO answering two questions
 <tr><td>sqft_living15</td><td>The square footage of interior housing living space for the nearest 15 neighbors</td></tr>
 <tr><td>sqft_lot15</td><td>The square footage of the land lots of the nearest 15 neighbors</td></tr>
 </table>
+
+<h2>3. Business Premises</h2>
+<h3>the assumptions that were assumed for the development of the business problem solution are:</h3>
+
+<ul>
+<li>The zipcode, condition and grade were the most important variables to decide which houses should be purchased or not. Only houses with condition 
+greater than or equal to three and grade greater than or equal to seven were classified as houses to be purchased.</li>
+<li>The season was considered an important variable to find the best moment to sell the house.</li>
+<li>The median price was considered a better metric to evaluate if the house should be purchased because the mean value can vary considerably 
+if a house in one region is priced much higher than other houses.</li>
+<li>The price per square foot of the living area was the variable analized to buy or not the house</li>
+<li>The values equal to zero in the column yr_renovated correspond to hoouses that were never renovated.</li>
+<li>The price column represents the value at which the house was advertised for sale.</li>
+<li>The date column represents the first day the house was for sale.</li>
+</ul>
+
+<h2>4. Solution Strategy</h2>
+<ol>
+<li>Download the dataset form <a href="https://www.kaggle.com/datasets/harlfoxem/housesalesprediction" target="_blank">Kaggle</a>.</li>
+<li>Understand the business problem.</li>
+<li>Clean, analyse and explore the dataset using data science packages in Python.</li>
+<li>Answer the main questions from the business problem.</li>
+<li>Develop dashboard for the CEO using Streamlit and deploy on the cloud <a href="https://house-rocket-app-ma.herokuapp.com/" target="_blank">Heroku</a>.</li>
+<li>Create possible insights and analyse them.</li>
+</ol>
+
 <!--
-# 3. Premissas do Negócio
-
-Quais premissas foram adotadas para este projeto:
-
-- As seguintes premissas foram consideradas para esse projeto:
-- Os valores iguais a zero em **yr_renovated** são casas que nunca foram reformadas.
-- O valor igual a 33 na coluna **bathroom** foi considerada um erro e por isso foi delatada das análises
-- A coluna **price** significa o preço que a casa foi / será comprada pela empresa House Rocket
-- Valores duplicados em ID foram removidos e considerados somente a compra mais recente
-- A localidade e a condição do imóvel foram características decisivas na compra ou não do imóvel
-- A estação do ano foi a característica decisiva para a época da venda do imóvel
-
-
-
-# 4. Estratégia de solução
-
-Quais foram as etapas para solucionar o problema de negócio:
-
-1. Coleta de dados via Kaggle
-2. Entendimento de negócio
-3. Tratamento de dados 
-
-- ​	Tranformação de variaveis 
-- ​	Limpeza 
-- ​	Entendimento
-
-4. Exploração de dados
-
-[link para app no Heroku](https://house-rocket-project.herokuapp.com/)
-
-
-5. Responder problemas do negócio
-
-6. Resultados para o negócio
-
-7. Conclusão
 
 # 5. Top Insights
 
