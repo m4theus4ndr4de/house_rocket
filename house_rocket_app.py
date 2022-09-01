@@ -65,14 +65,14 @@ def overview_data(data):
 
     # Statistic Descriptive
     num_attributes = data_selection.select_dtypes( include=['int64', 'float64'])
-    media = pd.DataFrame(num_attributes.apply(np.mean))
-    mediana = pd.DataFrame(num_attributes.apply(np.median))
+    mean = pd.DataFrame(num_attributes.apply(np.mean))
+    median = pd.DataFrame(num_attributes.apply(np.median))
 
     std = pd.DataFrame(num_attributes.apply(np.std))
     max_ = pd.DataFrame(num_attributes.apply(np.max)) 
     min_ = pd.DataFrame(num_attributes.apply(np.min)) 
 
-    df1 = pd.concat([max_, min_, media, mediana, std], axis=1).reset_index()
+    df1 = pd.concat([max_, min_, mean, median, std], axis=1).reset_index()
 
     df1.columns = ['attributes', 'max', 'min', 'mean', 'median', 'std'] 
 
@@ -246,6 +246,39 @@ def attributes_distribution(data):
 
     return None
 
+def buy_and_sell(data):
+    st.title('House to Buy and Sell')
+
+    # creating new features
+    data['sqft_price'] = data['price'] / data['sqft_living']
+    data['date'] = pd.to_datetime(data['date'])
+    data['year'] = data['date'].dt.year
+    month_names = {1:'jan', 2:'feb', 3:'mar', 4:'apr', 5:'may', 6:'jun', 7:'jul', 8:'aug', 9:'sep', 10:'oct', 11:'nov', 12:'dec'}
+    data['month'] = data['date'].dt.month.replace(month_names)
+    data['season'] = data['date'].apply(lambda x: 'spring' if 3 <= x.month <= 5 else 'summer' if 6 <= x.month <= 8 else 'autumn' if 9 <= x.month <= 11 else 'winter')
+    
+    # creating a new dataframe that contains only the houses to buy
+    data_median = data[['zipcode', 'sqft_price']].groupby('zipcode').median().reset_index()
+    data_median.rename(columns={'sqft_price':'median_sqft_price'}, inplace=True)
+    df = pd.merge(data[['id', 'date', 'season','price', 'condition', 'grade', 'zipcode', 'sqft_price']], data_median, on='zipcode', how='left')
+    df['status'] = df[['sqft_price', 'median_sqft_price', 'condition', 'grade']].apply(lambda x: 'buy' if x.sqft_price < x.median_sqft_price and x.condition >= 3 and x.grade >= 7 else 'not buy', axis=1)
+    df_buy = df.query("status == 'buy'")
+    
+    # setting the price at which houses should be sold
+    df_buy_median = df_buy[['zipcode', 'season', 'sqft_price']].groupby(['zipcode', 'season']).median().reset_index()
+    df_buy_median.rename(columns={'sqft_price':'median_sqft_price_sell'}, inplace=True)
+    df_sell = pd.merge(df_buy, df_buy_median, on=['zipcode', 'season'], how='left')
+    df_sell['sell_price'] = df_sell[['price', 'sqft_price', 'median_sqft_price_sell']].apply(lambda x: x.price * 1.3 if x.sqft_price < x.median_sqft_price_sell else x.price * 1.1, axis = 1)
+
+    # showing the dataframes
+    c1, c2 = st.columns((1, 1))
+    c1.header('Houses to be Bought')
+    c1.dataframe(df_buy, height=800)
+    c2.header('Houses to be Sold')
+    c2.dataframe(df_sell, height=800)
+
+    return None
+
 if __name__ == "__main__":
     # data extraction
     path = 'kc_house_data.csv'
@@ -264,3 +297,5 @@ if __name__ == "__main__":
     commercial_distribution(data)
 
     attributes_distribution(data)
+
+    buy_and_sell(data)
