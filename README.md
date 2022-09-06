@@ -7,7 +7,7 @@ The dataset used in this project is from Kaggle and it is available <a href="htt
 
 <h2>1. Description of the Business Problem</h2>
 
-<p>The House Rocket is a real state company. They work buying houses for a good price and selling selling them later after some time. 
+<p>The House Rocket is a real state company. They work buying houses for a good price and selling them later after some time. 
 The company has a dataset that contains information about a lot of houses available to be bought. 
 The data scientist from House Rocket should help the CEO answering two questions and creating two tool to help understanding the dataset.</p>
 
