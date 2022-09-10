@@ -87,7 +87,7 @@ if a house in one region is priced much higher than other houses.</li>
 <p><b>I1:</b> Houses that have some kind of river, lake or sea in front of them are at least 30% more expensive than the others that don't have water in front of them.</p>
 <p><b>True:</b> Houses that have some kind of river, lake or sea in front of them are 212,64% more expensive.</p>
 
-<p><b>I2:</b> Huses built before 1955 are 50% cheaper.</p>
+<p><b>I2:</b> Houses built before 1955 are 50% cheaper.</p>
 <p><b>False:</b> The price of the houses that were built before and after 1955 are almost the same.</p>
 
 <p><b>I3:</b> The average price of the houses are greater in the summer than all other seasons by 10%.</p>
