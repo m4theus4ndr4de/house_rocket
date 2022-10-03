@@ -1,6 +1,6 @@
 <img src="real_state_market.jpg" alt="logo" style="zoom:100%;" />
 
-<h1>House Rocket</h1>
+<h1>Real State Negotiation</h1>
 
 <p>This is a fictional project for studying purposes. The company, business context and the insights are not real. 
 The dataset used in this project is from Kaggle and it is available <a href="https://www.kaggle.com/datasets/harlfoxem/housesalesprediction" target="_blank">there</a>.</p>
