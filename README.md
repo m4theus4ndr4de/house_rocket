@@ -2,31 +2,31 @@
 
 <h1>Real State Negotiation</h1>
 
-<p>This is a fictional project for studying purposes. The company, business context and the insights are not real. 
+<p align="justify">This is a fictional project for studying purposes. The company, business context and the insights are not real. 
 The dataset used in this project is from Kaggle and it is available <a href="https://www.kaggle.com/datasets/harlfoxem/housesalesprediction" target="_blank">there</a>.</p>
 
 <h2>1. Description of the Business Problem</h2>
 
-<p>The House Rocket is a real state company. They work buying houses for a good price and selling them later after some time. 
+<p align="justify">The House Rocket is a real state company. They work buying houses for a good price and selling them later after some time. 
 The company has a dataset that contains information about a lot of houses available to be bought. 
 The data scientist from House Rocket should help the CEO answering two questions and creating two tool to help understanding the dataset.</p>
 
 <h3>The questions to be answered:</h3>
 
-<p>Which houses should the House Rocket CEO buy and at what price?
+<p align="justify">Which houses should the House Rocket CEO buy and at what price?
     The source code can be found <a href="https://github.com/m4theus4ndr4de/house_rocket/blob/main/house_rocket_app.py" target="_blank">here</a>
         and the dashboard is available <a href="https://house-rocket-app-ma.herokuapp.com/" target="_blank">here</a>.</p>
-<p>When is the best time to sell them and what would be the selling price? 
+<p align="justify">When is the best time to sell them and what would be the selling price? 
     The source code can be found <a href="https://github.com/m4theus4ndr4de/house_rocket/blob/main/house_rocket_insights.ipynb" target="_blank">here</a>.</p>
 
 <h3>The tools to be created:</h3>
 
-<p>An interactive dashboard in which it is possible to filter the data according to the CEO requirements and explore more about it.</p>
-<p>Crate a few insights about the dataset telling if they are true or false.</p>
+<p align="justify">An interactive dashboard in which it is possible to filter the data according to the CEO requirements and explore more about it.</p>
+<p align="justify">Crate a few insights about the dataset telling if they are true or false.</p>
 
 <h2>2. Dataset Attributes</h2>
 
-<p>Information about the atrributes can be found <a href="https://www.kaggle.com/harlfoxem/housesalesprediction/discussion/207885" target="_blank">here</a>.</p>
+<p align="justify">Information about the atrributes can be found <a href="https://www.kaggle.com/harlfoxem/housesalesprediction/discussion/207885" target="_blank">here</a>.</p>
 
 <table style="width:100%">
 <tr><th>Attribute</th><th>Description</th></tr>
@@ -109,7 +109,7 @@ if a house in one region is priced much higher than other houses.</li>
 
 <h2>7. Conclusion</h2>
 
-<p>The questions that motivated this project were answered. Analysing the dataset it was possible to find out which houses should be bought based on their price, zipcode, condition and grade. 
+<p align="justify">The questions that motivated this project were answered. Analysing the dataset it was possible to find out which houses should be bought based on their price, zipcode, condition and grade. 
     The dashboard was created using Streamlit and deployed on <a href="https://house-rocket-app-ma.herokuapp.com/" target="_blank">Heroku</a>. The insights were generated based on the dataset from 
     <a href="https://www.kaggle.com/datasets/harlfoxem/housesalesprediction" target="_blank">Kaggle</a>.</p>
 
