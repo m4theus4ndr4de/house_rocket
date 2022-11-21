@@ -77,7 +77,7 @@ if a house in one region is priced much higher than other houses.</li>
 <li>Understand the business problem.</li>
 <li>Clean, analyse and explore the dataset using data science packages in Python.</li>
 <li>Answer the main questions from the business problem.</li>
-<li>Develop dashboard for the CEO using Streamlit and deploy on the cloud <a href="https://m4theus4ndr4de-insights-real-state-nego-house-rocket-app-a7tvw8.streamlit.app/" target="_blank">Streamlit</a> Cloud.</li>
+<li>Develop dashboard for the CEO using Streamlit and deploy on the <a href="https://m4theus4ndr4de-insights-real-state-nego-house-rocket-app-a7tvw8.streamlit.app/" target="_blank">Streamlit</a> Cloud.</li>
 <li>Create possible insights and analyse them.</li>
 </ol>
 
