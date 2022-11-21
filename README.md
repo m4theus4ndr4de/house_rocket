@@ -14,8 +14,7 @@ The data scientist from House Rocket should help the CEO answering two questions
 <h3>The questions to be answered:</h3>
 
 <p align="justify">Which houses should the House Rocket CEO buy and at what price?
-    The source code can be found <a href="https://github.com/m4theus4ndr4de/house_rocket/blob/main/house_rocket_app.py" target="_blank">here</a>
-        and the dashboard is available <a href="https://house-rocket-app-ma.herokuapp.com/" target="_blank">here</a>.</p>
+    The source code can be found <a href="https://github.com/m4theus4ndr4de/house_rocket/blob/main/house_rocket_app.py" target="_blank">here</a> and the dashboard is available <a href="https://m4theus4ndr4de-insights-real-state-nego-house-rocket-app-a7tvw8.streamlit.app/" target="_blank">here</a>.</p>
 <p align="justify">When is the best time to sell them and what would be the selling price? 
     The source code can be found <a href="https://github.com/m4theus4ndr4de/house_rocket/blob/main/house_rocket_insights.ipynb" target="_blank">here</a>.</p>
 
@@ -78,7 +77,7 @@ if a house in one region is priced much higher than other houses.</li>
 <li>Understand the business problem.</li>
 <li>Clean, analyse and explore the dataset using data science packages in Python.</li>
 <li>Answer the main questions from the business problem.</li>
-<li>Develop dashboard for the CEO using Streamlit and deploy on the cloud <a href="https://house-rocket-app-ma.herokuapp.com/" target="_blank">Heroku</a>.</li>
+<li>Develop dashboard for the CEO using Streamlit and deploy on the cloud <a href="https://m4theus4ndr4de-insights-real-state-nego-house-rocket-app-a7tvw8.streamlit.app/" target="_blank">Streamlit</a> Cloud.</li>
 <li>Create possible insights and analyse them.</li>
 </ol>
 
@@ -110,7 +109,7 @@ if a house in one region is priced much higher than other houses.</li>
 <h2>7. Conclusion</h2>
 
 <p align="justify">The questions that motivated this project were answered. Analysing the dataset it was possible to find out which houses should be bought based on their price, zipcode, condition and grade. 
-    The dashboard was created using Streamlit and deployed on <a href="https://house-rocket-app-ma.herokuapp.com/" target="_blank">Heroku</a>. The insights were generated based on the dataset from 
+    The dashboard was created using Streamlit and deployed on <a href="https://m4theus4ndr4de-insights-real-state-nego-house-rocket-app-a7tvw8.streamlit.app/" target="_blank">Streamlit</a>. The insights were generated based on the dataset from 
     <a href="https://www.kaggle.com/datasets/harlfoxem/housesalesprediction" target="_blank">Kaggle</a>.</p>
 
 <h2>8. Future Work</h2>
