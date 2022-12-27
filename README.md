@@ -20,8 +20,8 @@ The data scientist from House Rocket should help the CEO answering two questions
 
 <h3>The tools to be created:</h3>
 
-<p align="justify">An interactive dashboard in which it is possible to filter the data according to the CEO requirements and explore more about it.</p>
-<p align="justify">Crate a few insights about the dataset telling if they are true or false.</p>
+<p align="justify">An interactive dashboard in which it is possible to filter the data according to the CEO requirements and explore more about it. The dashboard was created using the Python package called Streamlit. It is available on Streamlit Cloud <a href="https://m4theus4ndr4de-insights-real-state-nego-house-rocket-app-po1u4u.streamlit.app/" target="_blank">here</a>.</p>
+<p align="justify">Create a few insights about the dataset telling if they are true or false.</p>
 
 <h2>2. Dataset Attributes</h2>
 
